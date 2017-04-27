@@ -21,7 +21,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rspec-mocks", "~> 2.14.0"
 
   gem.add_runtime_dependency 'fog-libvirt', '>= 0.3.0'
-  gem.add_runtime_dependency 'nokogiri', '~> 1.6.0'
+  # Make sure to use the same version of Nokogiri as Vagrant (https://git.io/v9sSO).
+  gem.add_runtime_dependency 'nokogiri', '~> 1.7.1'
 
   gem.add_development_dependency 'rake'
 end
